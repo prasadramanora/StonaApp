@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain"
+    >
+
+    <ImageView
+        android:id="@+id/exconlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logostrip"
+        android:adjustViewBounds="true"
+        android:fitsSystemWindows="true"
+
+        android:layout_marginTop="8dp"/>
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exconlogo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">-->
+    <!-- Editext for Search -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/exconlogo"
+        >
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextsearch"
+        android:clickable="true"
+
+        android:background="@color/white"
+        android:layout_gravity="right"
+
+        />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_exhibitor_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/exconlogo"
+                            >
+
+
+                        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+<!--
+                </ScrollView>
+
+        </RelativeLayout>-->
+        <!--
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ad1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />-->
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context="com.app.exhibitionz.excon.exhibitorlist.Hall.Fragment.CountryCompanyNameFragment"
+        android:background="@color/blue"
+        >
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_exhibitor_company"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    -->

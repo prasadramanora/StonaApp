@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/backgroundmain"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logostrip"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/stripcallus" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/azcompanyname"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sub_text_size"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:linksClickable="true"
+                    android:textColorLink="#3F51B5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aznameofperson"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sub_text_size"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:linksClickable="true"
+                    android:textColorLink="#3F51B5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:src="@drawable/phonecall"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtmob1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sub_text_size"
+
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:src="@drawable/phonecall"
+                        android:paddingRight="5dp"
+                        android:id="@+id/iv_mob2icon"
+                        android:paddingTop="10dp"
+                        />
+
+                <TextView
+                    android:id="@+id/txtmob2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sub_text_size" />
+
+                    </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/azmobile"
+                android:textColor="#fff"
+                android:textSize="@dimen/sub_text_size"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:linksClickable="true"
+                android:textColorLink="#3F51B5"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+

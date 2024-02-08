@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/regid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/backgroundmain"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="0.5">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+
+                    android:src="@drawable/logostrip" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Registration Form"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/textcolorstona" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Spinner
+                        android:id="@+id/spn_Name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone"
+
+                        />
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/visitortype"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVfullname"
+                        android:layout_width="308dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_full_name"
+
+                        android:inputType="textCapWords"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/briefcase"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVDesignation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_visitor_designation"
+                        android:inputType="textCapSentences"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/company"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVCompanyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_company"
+                        android:inputType="textCapSentences"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true"
+                    android:text="@string/enter_visitor_country"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/earth" />
+
+                    <Spinner
+                        android:id="@+id/spn_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#fff"
+
+
+                        android:drawablePadding="10dp"
+                        android:spinnerMode="dropdown"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#fff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+
+                        android:src="@drawable/city"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVcity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_city"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/phonecall"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="#fff"
+                        android:textColorHint="@color/textcolorhint" />
+
+
+                    <EditText
+                        android:id="@+id/edtVPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_phone"
+                        android:inputType="number"
+                        android:maxLength="13"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true"
+                        android:text="@string/enter_visitor_type"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/email"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/password"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtVpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_password"
+                        android:password="true"
+                        android:textColor="#fff"
+                        android:textColorHint="@color/textcolorhint"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/password"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edtConformpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/enter_visitor_re_password"
+                        android:password="true"
+                        android:textColor="#fff"
+                        android:textColorHint="@color/textcolorhint"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/visitortype"></ImageView>
+
+                    <Spinner
+                        android:id="@+id/spn_visitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:paddingTop="20dp"
+                        android:paddingRight="5dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/textcolorhint" />
+
+
+                <EditText
+                    android:id="@+id/edtVOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/enter_visitor_other"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+
+                <Button
+                    android:id="@+id/btnVRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:background="@drawable/button_corner_accent"
+
+                    android:text="@string/visitor_register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
